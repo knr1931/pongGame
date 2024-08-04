@@ -1,8 +1,7 @@
 from turtle import Turtle
 from constants import (
     BALL_WIDTH_FACTOR, BALL_HEIGHT_FACTOR,
-    BALL_COLOR, BALL_SHAPE, BALL_SPEED,
-    BALL_YCOR_BOUNDARY,
+    BALL_COLOR, BALL_SHAPE, INITIAL_BALL_SPEED, BALL_SPEED_INCREASE_FACTOR,
     BALL_MOVING_DISTANCE
 )
 
@@ -15,7 +14,7 @@ class Ball(Turtle):
         self.penup()
         self.shapesize(stretch_wid=BALL_WIDTH_FACTOR, stretch_len=BALL_HEIGHT_FACTOR)
         self.color(BALL_COLOR)
-        self.speed(BALL_SPEED)
+        self.move_speed = INITIAL_BALL_SPEED
         self.x_move = BALL_MOVING_DISTANCE
         self.y_move = BALL_MOVING_DISTANCE
 
@@ -29,7 +28,9 @@ class Ball(Turtle):
 
     def bounce_x(self):
         self.x_move *= -1
+        self.move_speed *= BALL_SPEED_INCREASE_FACTOR
 
     def reset_position(self):
         self.goto(x=0, y=0)
+        self.move_speed = INITIAL_BALL_SPEED
         self.bounce_x()

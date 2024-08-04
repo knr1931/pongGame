@@ -11,6 +11,7 @@ from constants import (
     BALL_PADDLE_COLLISION_DISTANCE
 )
 from ball import Ball
+from scoreboard import ScoreBoard
 import time
 
 screen = Screen()
@@ -34,11 +35,12 @@ screen.onkey(key=LEFT_PADDLE_UP_KEY, fun=left_paddle.up)
 screen.onkey(key=LEFT_PADDLE_DOWN_KEY, fun=left_paddle.down)
 
 ball = Ball()
+score_board = ScoreBoard()
 
 is_game_on = True
 while is_game_on:
     screen.update()
-    time.sleep(0.1)
+    time.sleep(ball.move_speed)
 
     ball.move()
 
@@ -51,10 +53,12 @@ while is_game_on:
 
     # Right Paddle Miss
     if ball.xcor() > BALL_XCOR_BOUNDARY:
+        score_board.increase_left_player_score()
         ball.reset_position()
 
     # Left Paddle Miss
     if ball.xcor() < -BALL_XCOR_BOUNDARY:
+        score_board.increase_right_player_score()
         ball.reset_position()
 
 screen.exitonclick()
