@@ -7,6 +7,7 @@ from constants import (
     LEFT_PADDLE_XCOR, LEFT_PADDLE_YCOR,
     LEFT_PADDLE_UP_KEY, LEFT_PADDLE_DOWN_KEY
 )
+from ball import Ball
 import time
 
 screen = Screen()
@@ -29,8 +30,14 @@ left_paddle = Paddle(x_cor=LEFT_PADDLE_XCOR, y_cor=LEFT_PADDLE_YCOR)
 screen.onkey(key=LEFT_PADDLE_UP_KEY, fun=left_paddle.up)
 screen.onkey(key=LEFT_PADDLE_DOWN_KEY, fun=left_paddle.down)
 
+
+ball = Ball()
+
 is_game_on = True
 while is_game_on:
     screen.update()
+    time.sleep(0.05)
+
+    ball.move()
 
 screen.exitonclick()

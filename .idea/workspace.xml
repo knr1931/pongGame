@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6e4f80f-1a1e-41d9-9db1-19d9bb5a80d1" name="Changes" comment="Completed Creating Main Game Screen">
-      <change afterPath="$PROJECT_DIR$/paddle.py" afterDir="false" />
+    <list default="true" id="c6e4f80f-1a1e-41d9-9db1-19d9bb5a80d1" name="Changes" comment="Completed Creating paddles">
+      <change afterPath="$PROJECT_DIR$/ball.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -25,21 +25,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "knr1931"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;knr1931&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/knr1931/pongGame.git",
-    "accountId": "832fabe4-d4ff-4a9a-9fac-92c854772d85"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/knr1931/pongGame.git&quot;,
+    &quot;accountId&quot;: &quot;832fabe4-d4ff-4a9a-9fac-92c854772d85&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2k9NNVav88yIZ2lqGhI8ern3V7M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -48,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.ball.executor": "Run",
     "Python.constants.executor": "Run",
     "Python.main.executor": "Run",
     "Python.paddle.executor": "Run",
@@ -87,12 +88,21 @@
       <option name="project" value="LOCAL" />
       <updated>1722692449606</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Completed Creating paddles">
+      <option name="closed" value="true" />
+      <created>1722695612618</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722695612618</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialised Pong Game Project" />
     <MESSAGE value="Completed Creating Main Game Screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Creating Main Game Screen" />
+    <MESSAGE value="Completed Creating paddles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed Creating paddles" />
   </component>
 </project>
