@@ -6,7 +6,8 @@ from constants import (
     RIGHT_PADDLE_UP_KEY, RIGHT_PADDLE_DOWN_KEY,
     LEFT_PADDLE_XCOR, LEFT_PADDLE_YCOR,
     LEFT_PADDLE_UP_KEY, LEFT_PADDLE_DOWN_KEY,
-    BALL_YCOR_BOUNDARY, BALL_RIGHT_PADDLE_BOUNDARY, BALL_LEFT_PADDLE_BOUNDARY,
+    BALL_XCOR_BOUNDARY, BALL_YCOR_BOUNDARY,
+    BALL_RIGHT_PADDLE_BOUNDARY, BALL_LEFT_PADDLE_BOUNDARY,
     BALL_PADDLE_COLLISION_DISTANCE
 )
 from ball import Ball
@@ -32,7 +33,6 @@ left_paddle = Paddle(x_cor=LEFT_PADDLE_XCOR, y_cor=LEFT_PADDLE_YCOR)
 screen.onkey(key=LEFT_PADDLE_UP_KEY, fun=left_paddle.up)
 screen.onkey(key=LEFT_PADDLE_DOWN_KEY, fun=left_paddle.down)
 
-
 ball = Ball()
 
 is_game_on = True
@@ -48,5 +48,13 @@ while is_game_on:
     if ((ball.distance(right_paddle) < BALL_PADDLE_COLLISION_DISTANCE and ball.xcor() == BALL_RIGHT_PADDLE_BOUNDARY) or
             (ball.distance(left_paddle) < BALL_PADDLE_COLLISION_DISTANCE and ball.xcor() == BALL_LEFT_PADDLE_BOUNDARY)):
         ball.bounce_x()
+
+    # Right Paddle Miss
+    if ball.xcor() > BALL_XCOR_BOUNDARY:
+        ball.reset_position()
+
+    # Left Paddle Miss
+    if ball.xcor() < -BALL_XCOR_BOUNDARY:
+        ball.reset_position()
 
 screen.exitonclick()
