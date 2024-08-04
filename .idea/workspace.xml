@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6e4f80f-1a1e-41d9-9db1-19d9bb5a80d1" name="Changes" comment="Completed Creating paddles">
-      <change afterPath="$PROJECT_DIR$/ball.py" afterDir="false" />
+    <list default="true" id="c6e4f80f-1a1e-41d9-9db1-19d9bb5a80d1" name="Changes" comment="Finished logic with bouncing with wall">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ball.py" beforeDir="false" afterPath="$PROJECT_DIR$/ball.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -96,13 +96,22 @@
       <option name="project" value="LOCAL" />
       <updated>1722695612618</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Finished logic with bouncing with wall">
+      <option name="closed" value="true" />
+      <created>1722749892062</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722749892062</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialised Pong Game Project" />
     <MESSAGE value="Completed Creating Main Game Screen" />
     <MESSAGE value="Completed Creating paddles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed Creating paddles" />
+    <MESSAGE value="Finished logic with bouncing with wall" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished logic with bouncing with wall" />
   </component>
 </project>
